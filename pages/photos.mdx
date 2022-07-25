@@ -9,8 +9,10 @@ date: 2021-03-18
 Here's some of my photography.
 
 import Image from 'next/image'
+import imageLoader from 'models/imageLoader'
 
 <Image
+  loader={imageLoader}
   src="/images/photo2.jpg"
   alt="Photo"
   width={1125}
@@ -21,6 +23,7 @@ import Image from 'next/image'
 [Unsplash ↗ ](https://unsplash.com/photos/WeYamle9fDM)
 
 <Image
+  loader={imageLoader}
   src="/images/photo.jpg"
   alt="Photo"
   width={1125}
